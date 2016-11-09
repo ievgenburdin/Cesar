@@ -13,7 +13,7 @@ def cesar_page(request):
 def crypting(request):
 	if request.method == "POST":
 		get_data = json.loads(request.body.decode('utf-8'))
-		print(get_data);
+		
 		decrypted = get_data['word']
 		key = int(get_data['key'])
 
@@ -59,7 +59,7 @@ def crypting(request):
 		data['result'] = crypted
 		data['number'] = number
 		data['temp_cr'] = temp_crypted
-		print(data)
+		
 
 	return HttpResponse(json.dumps(data), content_type = "application/json")
 
@@ -80,7 +80,7 @@ def info(request):
 					
 			number.append(temp_num)
 		data = {}
-		print(number)
+		
 		data['number'] = number
 		data['word'] = decrypted
 
