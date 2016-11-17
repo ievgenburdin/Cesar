@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^$',views.cesar_page, name='cesar_page'),
-	url(r'^data/$',views.crypting),
-	url(r'^info/$',views.info),
+	url(r'^c/$',views.crypting),
+    url(r'^d/$',views.decrypting),
+	url(r'^i/$',views.info),
 ]+static(settings.STATIC_URL)

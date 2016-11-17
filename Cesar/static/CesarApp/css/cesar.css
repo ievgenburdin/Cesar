@@ -10,9 +10,10 @@ body {
 }
 
 .chart {
-    width: 80%;
-    float: center;
-    margin: 15px;
+    max-width: auto;
+    margin: auto;
+
+    
 }
 
 .column {

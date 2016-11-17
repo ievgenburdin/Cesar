@@ -54,11 +54,10 @@ $(function(){
 		var data = {
 			word: $("#decrypted").val(),
 			key: $("#key").val(),
-			type: 'decrypting',
 			}
 		var jsondata = JSON.stringify(data);
 		$.ajax({
-			url: 'http://127.0.0.1:8000/CesarApp/data/',
+			url: 'http://127.0.0.1:8000/CesarApp/d/',
 			type: 'POST',
 			data : jsondata,
 			success: function(data){
@@ -70,11 +69,10 @@ $(function(){
 			var data = {
 				word: $("#decrypted").val(),
 				key: $("#key").val(),
-				type: 'crypting',
 				}
 			var jsondata = JSON.stringify(data);
 			$.ajax({
-				url: 'http://127.0.0.1:8000/CesarApp/data/',
+				url: 'http://127.0.0.1:8000/CesarApp/c/',
 				type: 'POST',
 				data : jsondata,
 				success: function(data){
@@ -91,7 +89,7 @@ $(function(){
 			}
 		var jsondata = JSON.stringify(data);
 		$.ajax({
-			url:'http://127.0.0.1:8000/CesarApp/info/',
+			url:'http://127.0.0.1:8000/CesarApp/i/',
 			type: 'POST',
 			data: jsondata,
 			success: function(data){
