@@ -77,7 +77,7 @@ $(function(){
 				data : jsondata,
 				success: function(data){
 					$("#crypted").val(data.result);
-				s}
+				}
 			});
 							
 	});
